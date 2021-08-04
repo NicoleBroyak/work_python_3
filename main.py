@@ -55,16 +55,12 @@ if item_weight == 0 and count == 0:
 
 if count != 0:
     print("Process finished, sending packages and calculating results")
-    print(lightest_package_number)
-    print(heaviest_package_number)
     if lightest_package > current_package_weight:
         lightest_package = current_package_weight
         lightest_package_number = package_number
     if heaviest_package < current_package_weight:
         heaviest_package = current_package_weight
         heaviest_package_number = package_number
-    print(lightest_package_number)
-    print(heaviest_package_number)
     print("Packages sent: {}; kilograms sent: {};"
           " unused kg in packages sent: {}; the lightest package sent:"
           "number {} ({}kg); the heaviest package sent: number {} ({}kg)"
